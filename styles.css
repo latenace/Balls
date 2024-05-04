@@ -24,7 +24,7 @@
 */
 
 .example-parent {
-	border: 2px solid #DFA612;
+	/*border: 2px solid #DFA612;*/
 	color: black;
 	display: flex;
 	font-family: sans-serif;
@@ -38,15 +38,16 @@
   }
   
   .example-draggable {
-	background-color: #4AAE9B;
+	background-color: #dfdfdf;
 	font-weight: normal;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	border-radius: 100px;
 	padding: 10px;
   }
   
   .example-dropzone {
-	background-color: #6DB65B;
+	background-color: #B7D2CC;
 	flex-basis: 100%;
 	flex-grow: 1;
 	border-radius: 15px;
