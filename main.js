@@ -11,6 +11,9 @@ dropZone.addEventListener('drop', function(event) {
 })
 
 
+const greenBall = "#B7CF57";
+
+
 function onDragStart(event) {
 	event
 	  .dataTransfer
@@ -19,12 +22,13 @@ function onDragStart(event) {
 	event
 	  .currentTarget
 	  .style
-	  .backgroundColor = 'yellow';
   }
 
 function onDragOver(event) {
 	event.preventDefault();
   }
+
+
 
 function onDrop(event) {
 	const id = event
@@ -36,5 +40,9 @@ function onDrop(event) {
 	  event
 	  	.dataTransfer
 	  	.clearData();
-	
+
+	// change the colour of the dropped ball to green 
+	  draggableElement
+	  	.style
+		.backgroundColor = greenBall;
   }

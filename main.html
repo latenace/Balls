@@ -9,8 +9,6 @@
     <title>Document</title>
   </head>
 
-  <h1>B.A.L.L.S</h1>
-  <p>MAC WebHack 2024</p>
 
   <body>
 
@@ -29,10 +27,16 @@
 	</div>
   </body>
 
+  <div class = "header">
+    <h1>B.A.L.L.S</h1>
+    <p>MAC WebHack 2024</p>
+  </div>
+
 
   <div class="example-parent">
     <div class="example-origin">
       To-do
+
       <div
         id="draggable-1"
         class="example-draggable"
@@ -72,8 +76,26 @@
       ondragover="onDragOver(event);"
       ondrop="onDrop(event);"
     >
-      Done
+      Urgent
     </div>
+
+      
+    <div
+      class="example-dropzone"
+      ondragover="onDragOver(event);"
+      ondrop="onDrop(event);"
+    >
+      Important
+    </div>
+
+    <div
+      class="example-dropzone"
+      ondragover="onDragOver(event);"
+      ondrop="onDrop(event);"
+    >
+      Can Wait...
+    </div>
+
   </div>
   </div>
 
