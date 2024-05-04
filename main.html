@@ -8,12 +8,60 @@
     <script src="main.js" defer></script>
     <title>Document</title>
   </head>
+
+  <h1>Balls <small>MAC WebHack 2024</small>
+
   <body>
+
 	<div class="container">
+    
 		<div id="card" draggable="true">
-			<h3>Items</h3>
+			<h3>Task</h3>
 		</div>
-		<div id="drop-zone" />
+
+    <div id="card" draggable="true">
+			<h3>Task</h3>
+		</div>
+
+    <h4>Urgent</h4>
+
+    <div id="drop-zone" />
+    <div id="drop-zone" />
+
 	</div>
   </body>
+
+
+  <div class="example-parent">
+    <div class="example-origin">
+      <div
+        id="draggable-1"
+        class="example-draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        draggable
+      </div>
+    </div>
+  
+    <div
+      class="example-dropzone"
+      ondragover="onDragOver(event);"
+      ondrop="onDrop(event);"
+    >
+      dropzone
+    </div>
+    <div
+    class="example-dropzone"
+    ondragover="onDragOver(event);"
+    ondrop="onDrop(event);"
+  >
+    dropzone
+  </div>
+  </div>
+
 </html>
+
+
+
+
