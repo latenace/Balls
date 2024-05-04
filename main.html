@@ -12,17 +12,10 @@
 
   <body>
 
+
 	<div class="container">
     
-		<div id="card" draggable="true">
-		</div>
 
-    <div id="card" draggable="true">
-		</div>
-
-
-    <div id="drop-zone" />
-    <div id="drop-zone" />
 
 	</div>
   </body>
@@ -36,6 +29,9 @@
   <div class="example-parent">
     <div class="example-origin">
       To-do
+      <div id="draggable-container">
+        
+      </div>
 
       <div
         id="draggable-1"
@@ -97,6 +93,11 @@
     </div>
 
   </div>
+  </div>
+
+  <div id="task-input">
+    <input type="text" id="new-task" placeholder="Enter new task">
+    <button onclick="addTask()">Add Task</button>
   </div>
 
 </html>

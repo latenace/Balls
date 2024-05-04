@@ -1,16 +1,3 @@
-const card = document.getElementById('card');
-const dropZone = document.getElementById('drop-zone');
-card.addEventListener('dragstart', function(event) {
-	console.log(event)
-})
-dropZone.addEventListener('dragover', function(event) {
-	event.preventDefault()
-})
-dropZone.addEventListener('drop', function(event) {
-	dropZone.prepend(card)
-})
-
-
 const greenBall = "#B7CF57";
 
 
@@ -46,3 +33,18 @@ function onDrop(event) {
 	  	.style
 		.backgroundColor = greenBall;
   }
+
+  //add new task
+  function addTask() {
+    const taskInput = document.getElementById('new-task').value.trim();
+    if (taskInput) {
+      const draggableContainer = document.getElementById('draggable-container');
+      const newTask = document.createElement('div');
+      newTask.classList.add('example-draggable');
+      newTask.draggable = true;
+      newTask.innerHTML = taskInput;
+      newTask.addEventListener('dragstart', onDragStart);
+      draggableContainer.appendChild(newTask);
+      document.getElementById('new-task').value = '';
+    }
+  };
