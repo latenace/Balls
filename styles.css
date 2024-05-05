@@ -2,67 +2,29 @@
     font-family: sans-serif;
 }
 
-<<<<<<< Updated upstream
-#drop-zone {
-	width: 200px;
-	height: 200px;
-	background-color: #ccc;
-}
-
-#card {
-	width: 50px;
-	height: 50px;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	border-radius: 30px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; 
-}
-*/
-
-.header {
-	font-family: sans-serif;
-}
-
 .example-parent {
-	border: 2px solid #000000;
-	color: black;
-	display: flex;
-	font-family: sans-serif;
-	font-weight: bold;
-=======
-.example-parent {
-    border: 2px solid #000000;
-    color: black;
+	color: #66b8b8;
     display: flex;
     font-family: sans-serif;
     font-weight: bold;
->>>>>>> Stashed changes
+	position: relative; 
   }
 
   .example-origin {
     flex-basis: 100%;
     flex-grow: 1;
     padding: 10px;
+	background-color: #E7F0EE;
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	z-index: 1;
   }
 
   .example-draggable {
-<<<<<<< Updated upstream
-	background-color: #dfdfdf;
-	font-weight: normal;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border-radius: 50%;
-	padding: 10px;
-	width: 100px;
-	height: 100px;
-	text-align: center;
-	line-height: 100px;
-=======
     background-color: #dfdfdf;
+	color:#FFFFFF;
     font-weight: normal;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -72,23 +34,84 @@
     height: 100px;
     text-align: center;
     line-height: 100px;
->>>>>>> Stashed changes
+	position: relative; 
+    z-index: 0; 
   }
-
-  .example-dropzone {
-<<<<<<< Updated upstream
-	background-color: #B7D2CC;
-	flex-basis: 100%;
-	flex-grow: 1;
-	border-radius: 15px;
-	padding: 10px;
-	margin: 10px
-=======
-    background-color: #B7D2CC;
+.example-dropzone {
+    background-color: #E7F0EE;
+    min-height: 400px;
+    height: auto;
     flex-basis: 100%;
     flex-grow: 1;
     border-radius: 15px;
     padding: 10px;
-    margin: 10px
->>>>>>> Stashed changes
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	position: relative; 
+    z-index: 2;
   }
+
+  .header {
+    display: flex;
+    align-items: center; 
+}
+
+.image-container {
+    display: flex;
+    margin-right: 20px; 
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.dropzone-banner {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    bottom: 35px;
+	margin-top: 10px;
+}
+
+.slider {
+	width: 100%;
+    height: 2px;  
+ }
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+#task-input button {
+    border: none; 
+    border-radius: 10px;
+    background-color: #80D1D1;
+    color: white;
+    padding: 8px 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#task-input button:hover {
+    background-color: #66b8b8; 
+}
+
+#task-input input {
+    border: none; 
+    border-radius: 10px; 
+	margin-bottom: 10px;
+	width: 200px;
+    background-color: #FFFFFF; 
+    padding: 8px 12px; 
+
+}

@@ -9,82 +9,54 @@
     <title>Document</title>
   </head>
 
-<<<<<<< Updated upstream
-
-  <body>
-
-
-	<div class="container">
-    
-
-
-	</div>
-  </body>
-
-=======
->>>>>>> Stashed changes
-  <div class = "header">
-    <h1>B.A.L.L.S</h1>
-    <p>MAC WebHack 2024</p>
-  </div>
-
+  <div class="header">
+    <div class="image-container">
+        <img src="FinalBalls.png" alt="B.A.L.L.S" width="150" height="100" style="margin-right: 270px;">
+        <img src="balldescription.png" alt="Ball Info" width="1000" height="100">
+    </div>
+</div>
 
   <div class="example-parent">
-    <div class="example-origin">
-      To-do
-      <div id="draggable-container">
-        
+    
+    <div class="example-origin" id="draggable-container">
+
+
+      <div id="task-input">
+        <p>Task Name</p>
+        <input type="text" id="new-task" placeholder="Enter new task">
+        <button onclick="addTask()">Create!</button>
       </div>
 
-      <div
-        id="draggable-1"
-        class="example-draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        thing 1
+      <div class="slider">
+        <input type="range" min="0" max="100" value="200" id="slider" class="accent" style="margin-bottom: 5px;">
+        <p>Difficulty: <span id="difficulty"></span></p> 
+        <style>
+          .accent {
+            accent-color: #80D1D1;
+        }
+
+          input {
+              width: 300px;
+          }
+      </style>
+
+<div id="draggable-tasks">
+</div>
+
       </div>
-      <div
-        id="draggable-2"
-        class="example-draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        thing 2
-      </div>
-      <div
-        id="draggable-3"
-        class="example-draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        thing 3
-      </div>
-      <div
-        id="draggable-4"
-        class="example-draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        thing 4
-      </div>
+
+
+
     </div>
+
+
   
     <div
       class="example-dropzone"
       ondragover="onDragOver(event);"
       ondrop="onDrop(event);"
     >
-      Urgent
-    </div>
-
-      
-    <div
-      class="example-dropzone"
-      ondragover="onDragOver(event);"
-      ondrop="onDrop(event);"
-    >
-      Important
+    <img src="urgentBanner.png" class="dropzone-banner">
     </div>
 
     <div
@@ -92,23 +64,27 @@
       ondragover="onDragOver(event);"
       ondrop="onDrop(event);"
     >
-      Can Wait...
+    <img src="importantBanner.png" class="dropzone-banner">
     </div>
 
-  </div>
+    <div
+      class="example-dropzone"
+      ondragover="onDragOver(event);"
+      ondrop="onDrop(event);"
+    >
+    <img src="canwaitbanner.png" class="dropzone-banner">
+    </div>
   </div>
 
-  <div id="task-input">
-    <input type="text" id="new-task" placeholder="Enter new task">
-    <button onclick="addTask()">Add Task</button>
+</div>
+      <!-- bin-->
+      <div class="bin"
+      ondragover="onDragOver(event);"
+      ondrop="onDrop(event);"
+      >
+      <img src="cross.png" style="width:100px">
+      </div>
   </div>
-
-<<<<<<< Updated upstream
+  
+  
 </html>
-
-
-
-
-=======
-</html>
->>>>>>> Stashed changes
